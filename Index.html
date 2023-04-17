@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
+    <title>Ingreso</title>
+</head>
+<body>
+    <!-- Barra de navegacion -->
+    <div>
+        <nav class="navbar bg-white">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="img/Logo.jpeg" alt="Logo" width="200" height="90" class="d-inline-block align-text-top">
+            </a>
+          </div>
+        </nav>
+      </div>
+      <!-- Formulario -->
+     <div class="container">
+        <form class="m-auto w-50 mt-2 mb-2" method="post" action="acciones/login.php" enctype="multipart/form-data">
+            <div class="mb-2 w-75">
+                <label class="form-label">Nombre: </label>
+                <input class="form-control" type="text" name="nombre">
+            </div>
+            <div class="mb-2 w-75">
+                <label class="form-label">Contraseña: </label>
+                <input class="form-control" type="password" name="cont">
+            </div>
+            <div class="mt-4">
+                <button class="btn btn-primary align-items-center" type="submit">Iniciar</button>
+            </div>
+        </form>
+     </div>
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
