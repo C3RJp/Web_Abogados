@@ -22,36 +22,41 @@
       </div>
       <!-- Cuerpo de pagina -->
       <!-- formulario -->
-      <div class="container">
-      <form method="POST" enctype="multipart/form-data" action="acciones/registro.php">
-        <table>
-            <td>
+      <div class="card m-auto mb-3 w-25">
+      <form class="m-5 mt-3" method="POST" enctype="multipart/form-data" action="acciones/registro.php">
+        <h2 class="text-center " >Registro</h2>
+        <div class="mt-1 mb-1 w-50">
             <label for="cedula">Cedula</label>
             <input name="cedula" type="number" min=0 placeholder="Numero de cedula">
-            </td>
-            <td>
+       </div>     
+        <div class="mt-1 mb-1 w-50">
             <label for="nombre">Nombre</label>
             <input name="nombre" type="text" placeholder="Su nombre">
-            </td>
-            <td>
+        </div>
+        <div class="mt-1 mb-1 w-50">
             <label for="contrasena">Contraseña</label>
             <input name="contrasena" type="text" placeholder="Su contraseña">
-            </td>
-            <td>
-            <label for="cargo">Cargo</label>
-            <input name="cargo" type="text" placeholder="Su cargo">
-            </td>
-            <td>
+        </div>
+        <div class="mt-3 mb-1 w-50">
+            <select name="cargo">
+            
+              <option value="abogado" selected>Abogado</option>
+              <option value="aux">Auxiliar</option>
+            </select>
+        </div>
+        <div class="mt-1 mb-1 w-50">
             <label for="documento">documento</label>
-            <input name="documento" type="file" placeholder="Su documento"><bd>
-            </td>            
-        </table>
-        <button class="btn btn-primary btn-sm" type="submit">Registrar</button>
+            <input name="documento" type="file" >
+        </div> 
+
+        <div class="d-grid gap-2 mt-3">
+            <button class="btn btn-primary" type="submit">Registrar</button>
+        </div>
       </form>
       </div>
       <!-- tabla -->
       <div class="container-fluid">
-        <table class="table table-dark table-striped">
+        <table class="table table-light table-striped">
             <thead>
                 <tr>
                 <th>Activo</th>
